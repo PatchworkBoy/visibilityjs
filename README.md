@@ -5,7 +5,7 @@
 Visibility.js is a wrapper for the [Page Visibility API]. It hides vendor prefixes and adds high level functions.
 
 Page Visibility API allows you to determine whether your web page is either visible to
-a user or hidden in background tab or prerendering. It allows you to use
+a user or hidden in a background tab or prerendering. It allows you to use
 the page visibility state in JavaScript logic and improve browser performance
 by disabling unnecessary timers and AJAX requests, or improve user interface
 experience (for example, by stopping video playback or slideshow when user
@@ -93,7 +93,7 @@ both the hidden and visible pages.
 ## Initializers
 
 Another common use case is when you need to execute some actions upon a switch to
-particular visibility state.
+a particular visibility state.
 
 ### Waiting until the page becomes visible
 
@@ -117,7 +117,7 @@ will run the `callback` immediately.
 
 ### Wait until the page is opened after prerendering
 
-A web developer can hint a browser (using Prerendering API) that an user
+A web developer can hint a browser (using Prerendering API) that a user
 is likely to click on some link (i.e. on a “Next” link in a multi-page article),
 and the browser then may prefetch and prerender the page, so that the user will
 not wait after actually going via the link.
@@ -158,7 +158,7 @@ if( Visibility.isSupported() ) {
 
 `Visibility.state()` will return a string with visibility state. More states
 can be added in the future, so for most cases a simpler `Visibility.hidden()`
-method can be used. It will return `true` if the page is hidden by any reason.
+method can be used. It will return `true` if the page is hidden for any reason.
 For example, while prerendering, `Visibility.state()` will return `"prerender"`,
 but `Visibility.hidden()` will return `true`.
 
@@ -285,7 +285,7 @@ For Ruby on Rails you can use gem for Assets Pipeline.
    #= require visibility
    ```
 
-   If you willn’t use `every` method, you can reduce library size by including
+   If you won’t use `every` method, you can reduce library size by including
    only core module:
 
    ```coffee
@@ -303,7 +303,7 @@ Add to your site:
 
 ### Other
 
-If you need just a files, you can take already minified packages from
+If you need just the files, you can take pre-minified packages from
 [github.com/ai/visibilityjs/releases](https://github.com/ai/visibilityjs/releases).
 
 ## Contributing
